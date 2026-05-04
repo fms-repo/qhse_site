@@ -127,7 +127,12 @@
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    width: '70vw',
+    height: '70vh',
+    zoomable: false,
+    loop: false,
+    touchNavigation: true
   });
 
   /**

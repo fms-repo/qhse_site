@@ -3965,3 +3965,45 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# GLightbox Medium Size Overrides
+--------------------------------------------------------------*/
+.glightbox-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100vh !important;
+  padding: 1rem !important;
+}
+.glightbox-container .gcontainer {
+  position: relative !important;
+  margin: auto !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  max-width: 70vw !important;
+  max-height: 70vh !important;
+  width: auto !important;
+}
+.glightbox-container .ginner-container {
+  max-width: 70vw !important;
+  max-height: 70vh !important;
+}
+.glightbox-container .gslide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.glightbox-container .gslide-media,
+.glightbox-container .gslide-image img {
+  display: block !important;
+  margin: auto !important;
+  max-width: 100% !important;
+  max-height: 65vh !important;
+  width: auto !important;
+  height: auto !important;
+}
+.glightbox-container .gslide-description {
+  max-width: 70vw !important;
+}
