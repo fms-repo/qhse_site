@@ -123,16 +123,50 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/rirdashboard.png" class="glightbox" data-gallery="module-overview" data-title="RIR Dashboard Overview">
-                          <img src="assets/img/services/rirdashboard.png" alt="RIR Dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-12">
-                        <a href="assets/img/services/risk-identification-loss-reporting.png" class="glightbox" data-gallery="module-overview" data-title="RIR Module Overview">
-                          <img src="assets/img/services/risk-identification-loss-reporting.png" alt="RIR Module" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/rir-1.png" class="glightbox" data-gallery="module-overview" data-title="RIR Dashboard">
+                                <img src="assets/img/rir-1.png" alt="RIR Dashboard" title="Risk identification and loss reporting dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/rir-2.png" class="glightbox" data-gallery="module-overview" data-title="RIR Interface">
+                                <img src="assets/img/rir-2.png" alt="RIR Interface" title="User-friendly risk assessment and reporting interface" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/rir-3.png" class="glightbox" data-gallery="module-overview" data-title="RIR Details">
+                                <img src="assets/img/rir-3.png" alt="RIR Details" title="Detailed risk analysis and mitigation tracking system" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

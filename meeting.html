@@ -123,16 +123,50 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/meeting1.png" class="glightbox" data-gallery="module-overview" data-title="Meeting Management Overview 1">
-                          <img src="assets/img/services/meeting1.png" alt="Meeting Management 1" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-12">
-                        <a href="assets/img/services/meeting2.png" class="glightbox" data-gallery="module-overview" data-title="Meeting Management Overview 2">
-                          <img src="assets/img/services/meeting2.png" alt="Meeting Management 2" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/meeting-1.png" class="glightbox" data-gallery="module-overview" data-title="Meeting Dashboard">
+                                <img src="assets/img/meeting-1.png" alt="Meeting Dashboard" title="Meeting scheduling and management dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/meeting-2.png" class="glightbox" data-gallery="module-overview" data-title="Meeting Interface">
+                                <img src="assets/img/meeting-2.png" alt="Meeting Interface" title="Interactive meeting interface with agenda and minutes" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/meeting-3.png" class="glightbox" data-gallery="module-overview" data-title="Meeting Details">
+                                <img src="assets/img/meeting-3.png" alt="Meeting Details" title="Detailed meeting records and action item tracking" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

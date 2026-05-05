@@ -123,16 +123,55 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/trainingdashboard.png" class="glightbox" data-gallery="module-overview" data-title="Training Dashboard Overview">
-                          <img src="assets/img/services/trainingdashboard.png" alt="Training Dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-12">
-                        <a href="assets/img/services/training-management-2.png" class="glightbox" data-gallery="module-overview" data-title="Training Management Detail">
-                          <img src="assets/img/services/training-management-2.png" alt="Training Management Detail" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/training-1.png" class="glightbox" data-gallery="module-overview" data-title="Training Dashboard">
+                                <img src="assets/img/training-1.png" alt="Training Dashboard" title="Comprehensive training management and scheduling dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/training-2.png" class="glightbox" data-gallery="module-overview" data-title="Training Interface">
+                                <img src="assets/img/training-2.png" alt="Training Interface" title="Interactive training interface with course management" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/training-3.png" class="glightbox" data-gallery="module-overview" data-title="Training Details">
+                                <img src="assets/img/training-3.png" alt="Training Details" title="Detailed training records and compliance tracking" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/training-4.png" class="glightbox" data-gallery="module-overview" data-title="Training Management">
+                                <img src="assets/img/training-4.png" alt="Training Management" title="Advanced training management with certification tracking" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

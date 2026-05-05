@@ -123,16 +123,45 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/audit-management.png" class="glightbox" data-gallery="module-overview" data-title="Audit Management Overview">
-                          <img src="assets/img/services/audit-management.png" alt="Audit Management" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-12">
-                        <a href="assets/img/services/auditedit.png" class="glightbox" data-gallery="module-overview" data-title="Audit Report Details">
-                          <img src="assets/img/services/auditedit.png" alt="Audit Report" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/audit-1.png" class="glightbox" data-gallery="module-overview" data-title="Audit Management Dashboard">
+                                <img src="assets/img/audit-1.png" alt="Audit Management Dashboard" title="Comprehensive audit management dashboard with scheduling and tracking" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/audit-2.png" class="glightbox" data-gallery="module-overview" data-title="Audit Interface">
+                                <img src="assets/img/audit-2.png" alt="Audit Interface" title="Intuitive audit interface for conducting and documenting findings" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

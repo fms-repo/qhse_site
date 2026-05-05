@@ -123,9 +123,47 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/services-4.webp" class="glightbox" data-gallery="module-overview" data-title="Inspection Management Overview">
-                          <img src="assets/img/services/services-4.webp" alt="Inspection Management" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/inspection-1.png" class="glightbox" data-gallery="module-overview" data-title="Inspection Dashboard">
+                                <img src="assets/img/inspection-1.png" alt="Inspection Dashboard" title="Equipment inspection scheduling and management dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/inspection-2.png" class="glightbox" data-gallery="module-overview" data-title="Inspection Interface">
+                                <img src="assets/img/inspection-2.png" alt="Inspection Interface" title="Digital inspection checklist and reporting interface" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="tab-pane fade" id="service-details-tab-2" role="tabpanel" aria-labelledby="features-tab">

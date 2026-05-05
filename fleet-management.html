@@ -123,16 +123,55 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/ivmsdashboard.png" class="glightbox" data-gallery="module-overview" data-title="Fleet Management Dashboard">
-                          <img src="assets/img/services/ivmsdashboard.png" alt="Fleet Management Dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-12">
-                        <a href="assets/img/services/fleet2.png" class="glightbox" data-gallery="module-overview" data-title="Fleet Management Details">
-                          <img src="assets/img/services/fleet2.png" alt="Fleet Management Details" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/fleet-1.png" class="glightbox" data-gallery="module-overview" data-title="Fleet Management Dashboard">
+                                <img src="assets/img/fleet-1.png" alt="Fleet Management Dashboard" title="Comprehensive fleet management dashboard with vehicle tracking" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/fleet-2.png" class="glightbox" data-gallery="module-overview" data-title="Fleet Interface">
+                                <img src="assets/img/fleet-2.png" alt="Fleet Interface" title="User-friendly fleet management interface for operations" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/fleet-3.png" class="glightbox" data-gallery="module-overview" data-title="Fleet Management View">
+                                <img src="assets/img/fleet-3.png" alt="Fleet Management View" title="Detailed fleet management view with maintenance tracking" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/fleet-4.png" class="glightbox" data-gallery="module-overview" data-title="IVMS Integration">
+                                <img src="assets/img/fleet-4.png" alt="IVMS Integration" title="Integrated Vehicle Management System for real-time monitoring" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

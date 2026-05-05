@@ -123,9 +123,32 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/fit-to-work.png" class="glightbox" data-gallery="module-overview" data-title="Fit to Work Overview">
-                          <img src="assets/img/services/fit-to-work.png" alt="Fit to Work" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/fit-to-work-1.png" class="glightbox" data-gallery="module-overview" data-title="Fit to Work Dashboard">
+                                <img src="assets/img/fit-to-work-1.png" alt="Fit to Work Dashboard" title="Fit to Work medical screening and certification dashboard" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

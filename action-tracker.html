@@ -123,16 +123,50 @@
                     </div>
                     <div class="row mt-4">
                       <div class="col-12">
-                        <a href="assets/img/services/kanban.png" class="glightbox" data-gallery="module-overview" data-title="Action Tracker Kanban View">
-                          <img src="assets/img/services/kanban.png" alt="Action Tracker Kanban" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row mt-4">
-                      <div class="col-12">
-                        <a href="assets/img/services/action-tracker.png" class="glightbox" data-gallery="module-overview" data-title="Action Tracker Overview">
-                          <img src="assets/img/services/action-tracker.png" alt="Action Tracker" class="img-fluid rounded" style="width:100%; max-width:100%;">
-                        </a>
+                        <div class="service-overview-slider swiper init-swiper">
+                          <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 700,
+                              "autoplay": {
+                                "delay": 4000,
+                                "disableOnInteraction": false
+                              },
+                              "slidesPerView": 1,
+                              "spaceBetween": 20,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                              },
+                              "breakpoints": {
+                                "768": {
+                                  "slidesPerView": 2
+                                },
+                                "992": {
+                                  "slidesPerView": 2
+                                }
+                              }
+                            }
+                          </script>
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <a href="assets/img/action-tracker-1.png" class="glightbox" data-gallery="module-overview" data-title="Action Tracker Dashboard">
+                                <img src="assets/img/action-tracker-1.png" alt="Action Tracker Dashboard" title="Centralized action tracking dashboard with real-time status updates" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/action-tracker-2.png" class="glightbox" data-gallery="module-overview" data-title="Action Tracker Interface">
+                                <img src="assets/img/action-tracker-2.png" alt="Action Tracker Interface" title="User-friendly interface for managing corrective and preventive actions" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a href="assets/img/action-tracker-3.png" class="glightbox" data-gallery="module-overview" data-title="Action Tracker Kanban View">
+                                <img src="assets/img/action-tracker-3.png" alt="Action Tracker Kanban" title="Visual kanban board for tracking action progress and workflows" class="img-fluid rounded" style="width:100%; max-width:100%;">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -1213,14 +1213,23 @@ section,
 }
 
 .about .about-image {
+  position: relative;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
+}
+
+.about .about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
 }
 
 .about .about-image .experience-badge {
   position: absolute;
-  bottom: 30px;
-  right: -30px;
+  bottom: -20px;
+  right: -20px;
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 1.5rem;
@@ -1246,8 +1255,8 @@ section,
 
 @media (max-width: 768px) {
   .about .about-image .experience-badge {
-    right: 0;
-    bottom: 20px;
+    right: -15px;
+    bottom: -15px;
     padding: 1rem;
     min-width: 120px;
   }
@@ -3652,6 +3661,27 @@ section,
 .service-details .service-gallery .service-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 25px;
   border-radius: 5px;
+  background-color: var(--accent-color);
+}
+
+.service-details .service-overview-slider .swiper-pagination {
+  padding-top: 15px;
+  text-align: center;
+  position: static;
+}
+
+.service-details .service-overview-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 70%);
+  opacity: 1;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.service-details .service-overview-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 6px;
   background-color: var(--accent-color);
 }
 
