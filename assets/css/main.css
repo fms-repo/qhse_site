@@ -3664,6 +3664,14 @@ section,
   background-color: var(--accent-color);
 }
 
+.service-details .service-overview-slider {
+  max-width: 100%;
+}
+
+.service-details .service-overview-slider .swiper-slide {
+  padding: 10px;
+}
+
 .service-details .service-overview-slider .swiper-pagination {
   padding-top: 15px;
   text-align: center;
@@ -3684,6 +3692,46 @@ section,
   border-radius: 6px;
   background-color: var(--accent-color);
 }
+.service-details .service-overview-slider .slide-image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1024 / 683;
+  width: 100%;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.service-details .service-overview-slider .slide-image-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-details .service-overview-slider .slide-hover-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.25rem;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.service-details .service-overview-slider .swiper-slide:hover .slide-hover-text,
+.service-details .service-overview-slider .swiper-slide:focus-within .slide-hover-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .service-details .service-sidebar {
   position: sticky;
